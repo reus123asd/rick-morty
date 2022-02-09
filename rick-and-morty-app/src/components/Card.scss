@@ -1,0 +1,74 @@
+.personaje {
+    background-color: #28527a;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template: 10rem auto / 1fr;
+    overflow: hidden;
+    animation: showCard 0.5s linear;
+  
+    &_personaje-header {
+      background: #08b2c9;
+      padding: 2rem;
+      text-align: center;
+    }
+  
+    &_personaje-body {
+      padding: 8rem 2rem 4rem;
+      position: relative;
+  
+      & figure {
+        position: absolute;
+        display: block;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        top: -5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0 0 1rem 0 #dbf6e9;
+        overflow: hidden;
+      }
+      & figure img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      & h2 {
+        width: 100%;
+        background-color: #08b2c9;
+        color: #151515;
+        border-radius: 0.5rem;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        transition-property: background, color;
+        font-size: 1.8rem;
+      }
+      & p {
+        width: 100%;
+        background-color: rgba(219, 246, 233, 0.9);
+        color: #151515;
+        border-radius: 0.5rem;
+        height: 4rem;
+        margin-top: 2rem;
+        line-height: 4rem;
+        text-align: center;
+      }
+      & p span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .lista-personajes {
+      grid-template-columns: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .lista-personajes {
+      grid-template-columns: 100%;
+    }
+  }

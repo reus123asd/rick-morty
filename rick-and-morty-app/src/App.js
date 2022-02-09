@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { Filtrar } from "./components/Filtrar";
 import { Card } from "./components/Card";
-import Navbar from './components/Navbar';
+import Navbar from "./components/Navbar";
+import './App.scss'
 
 function App() {
   const [personajes, setPersonajes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState("");
 
-  const url = "https://rickandmortyapi.com/api/character";
+  const url = "https://rickandmortyapi.com/api/character/";
 
   useEffect(() => {
     const getPersonajes = async () => {
@@ -31,11 +32,8 @@ function App() {
   return (
     <div className="container">
       <Navbar></Navbar>
-      {/* form filtrar */}
       <Filtrar filter={filter} setFilter={setFilter} />
-      {/* form filtrar */}
 
-      {/* section personajes */}
       <section className="container_lista-personajes">
         {loading ? (
           <p>Cargando...</p>
@@ -50,7 +48,6 @@ function App() {
           </p>
         )}
       </section>
-      {/* section personajes */}
     </div>
   );
 }

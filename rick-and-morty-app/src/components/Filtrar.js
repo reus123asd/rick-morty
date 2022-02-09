@@ -1,4 +1,5 @@
 import React from 'react'
+import './Filtrar.scss'
 
 export const Filtrar = ({ filter, setFilter }) => {
 	const handleInput = ({ target }) => {
