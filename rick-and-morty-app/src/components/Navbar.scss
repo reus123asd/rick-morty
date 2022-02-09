@@ -1,0 +1,12 @@
+.contenedor{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40PX;
+
+    &_titulo a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+}
