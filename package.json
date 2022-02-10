@@ -2,7 +2,7 @@
   "name": "rick-and-morty-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://reus123asd.github.com/reus123asd/rick-morty",
+  "homepage": "https://reus123asd.github.io/rick-morty",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
